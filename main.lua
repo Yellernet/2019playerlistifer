@@ -43,12 +43,12 @@ ScrollList.MidImage = "rbxasset://textures/ui/scroll-middle.png"
 ScrollList.ScrollBarThickness = 0
 ScrollList.TopImage = "rbxasset://textures/ui/scroll-top.png"
 ScrollList.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-
+local positisotjsdlfk = UDim2.new(0,0,0,20)
 zzzTeamTemplate1.Name = "zzzTeamTemplate1"
 zzzTeamTemplate1.Parent = ScrollList
 zzzTeamTemplate1.BackgroundTransparency = 1.000
 zzzTeamTemplate1.BorderColor3 = Color3.fromRGB(27, 42, 53)
-zzzTeamTemplate1.Position = UDim2.new(0, 0, 0, 20)
+zzzTeamTemplate1.Position = positisotjsdlfk
 zzzTeamTemplate1.Size = UDim2.new(1, 0, 0, 20)
 zzzTeamTemplate1.Visible = false
 
