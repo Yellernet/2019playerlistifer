@@ -20,7 +20,7 @@ local PopupClipFrame = Instance.new("Frame")
 --Properties:
 
 PlayerList.Name = "PlayerList"
-PlayerList.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PlayerList.Parent = game:GetService('Players').LocalPlayer:WaitForChild("PlayerGui")
 PlayerList.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 PlayerListContainer.Name = "PlayerListContainer"
@@ -278,7 +278,7 @@ local function DWXDK_fake_script() -- ScrollList.LocalScript
 	
 	end
 	local function Setup()
-		for i,v in ipairs(game.Players:GetPlayers()) do
+		for i,v in ipairs(game:GetService('Players'):GetPlayers()) do
 			v.Changed:Connect(function(property)
 				if property == "Team" then
 					refreshPlayerList()
